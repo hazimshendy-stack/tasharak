@@ -52,7 +52,7 @@ export const investors: Investor[] = [
     id: "001",
     code: "001",
     name: "المشارك 001",
-    investment: 125,
+    investment: 1000,
   },
   {
     id: "002",
