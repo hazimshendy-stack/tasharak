@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #08080a;
+  color: #e8e8ec;
+  min-height: 100%;
+}
+
+body {
+  font-family: "IBM Plex Sans Arabic", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+.num {
+  font-family: "Inter", system-ui, sans-serif;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+::selection {
+  background: rgba(16, 185, 129, 0.25);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #1c1c22; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #2a2a32; }
+
+@keyframes tasharak-fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes tasharak-rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in { animation: tasharak-fade-in 0.18s ease-out both; }
+.animate-rise    { animation: tasharak-rise 0.24s cubic-bezier(0.22, 1, 0.36, 1) both; }
