@@ -30,7 +30,7 @@ export const fundData: FundData = {
   nameEn: "Tasharak",
   tagline: "نشارك رأس المال، ونتابع النمو.",
   currency: "EGP",
-  totalReturn: 0,
+  totalReturn: 5,
 };
 
 // ================================
@@ -52,7 +52,7 @@ export const investors: Investor[] = [
     id: "001",
     code: "001",
     name: "المشارك 001",
-    investment: 1000,
+    investment: 125,
   },
   {
     id: "002",
